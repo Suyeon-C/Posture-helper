@@ -17,7 +17,7 @@ def beepsound():
 # 카카오톡 메세지에 담을 내용 
 def send_music_link():
     KAKAO_TOKEN_FILENAME = "kakao_message/kakao_token.json"
-    KAKAO_APP_KEY = "dab7b2668963c716574013798831227d"
+    KAKAO_APP_KEY = "rest api 적기"
     tokens = kakao_utils.update_tokens(KAKAO_APP_KEY, KAKAO_TOKEN_FILENAME)
 
     template = {
@@ -30,7 +30,6 @@ def send_music_link():
         "button_title": "바른 자세 확인하기"
     }
 
-    # 카카오톡 메시지 전송
     res = kakao_utils.send_message(KAKAO_TOKEN_FILENAME, template)
     if res.json().get('result_code') == 0:
         print('메시지를 성공적으로 보냈습니다.')

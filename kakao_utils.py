@@ -53,9 +53,9 @@ url = "https://kauth.kakao.com/oauth/token"
 
 data = {
     "grant_type" : "authorization_code",
-    "client_id" : "dab7b2668963c716574013798831227d",
+    "client_id" : "rest api 적기",
     "redirect_uri" : "https://localhost.com",
-    "code" : "5tEFATGvWObsZaY4ifRvekndLpZdeGa_WFCjcRiL3wkw1Y6Ebsh1wCHhExZL3UOLjSJNrwo9dNsAAAF_-ZTCmA" # code=xxx, xxx 부분 적기 https://kauth.kakao.com/oauth/authorize?client_id=rest id 적기&response_type=code&redirect_uri=https://localhost.com
+    "code" : "적기" # code=xxx, xxx 부분 적기 https://kauth.kakao.com/oauth/authorize?client_id=rest id 적기&response_type=code&redirect_uri=https://localhost.com
 }
 
 response = requests.post(url, data=data)
